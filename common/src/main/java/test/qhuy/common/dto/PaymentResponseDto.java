@@ -10,7 +10,7 @@ import test.qhuy.common.event.PaymentStatus;
 @AllArgsConstructor
 public class PaymentResponseDto {
     private Long userId;
-    private Long orderId;
+    private String orderId;
     private Double amount;
     private PaymentStatus status;
 }

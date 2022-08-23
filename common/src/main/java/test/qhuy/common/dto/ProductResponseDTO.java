@@ -11,7 +11,7 @@ import test.qhuy.common.event.ProductStatus;
 @Getter
 public class ProductResponseDTO {
 
-    private Long orderId;
+    private String orderId;
     private Long userId;
     private Long productId;
     private ProductStatus status;

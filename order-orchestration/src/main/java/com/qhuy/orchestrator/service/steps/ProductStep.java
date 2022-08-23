@@ -3,7 +3,9 @@ package com.qhuy.orchestrator.service.steps;
 import com.qhuy.orchestrator.service.OrchestratorService;
 import com.qhuy.orchestrator.service.WorkFlowStep;
 import com.qhuy.orchestrator.service.WorkFlowStepStatus;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.reactive.function.BodyInserter;
@@ -19,9 +21,8 @@ import test.qhuy.common.event.ProductStatus;
 
 import java.util.function.Function;
 
-@Configuration
-public class ProductStep implements WorkFlowStep {
 
+public class ProductStep implements WorkFlowStep {
     private final WebClient webClient;
 
     private final ProductRequestDTO requestDTO;

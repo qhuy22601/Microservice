@@ -7,22 +7,43 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="order-orchestration" />
         <module name="userAuthen" />
         <module name="product" />
+        <module name="common" />
+        <module name="order-kafka" />
+        <module name="api-gateway" />
         <module name="server-discovery" />
+        <module name="user" />
+        <module name="cart" />
+        <module name="order" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="api-gateway" target="18" />
       <module name="AuthenMS" target="18" />
+      <module name="cart" target="18" />
+      <module name="common" target="18" />
+      <module name="order" target="18" />
+      <module name="order-kafka" target="18" />
+      <module name="order-orchestration" target="18" />
       <module name="product" target="18" />
       <module name="server-discovery" target="18" />
+      <module name="user" target="18" />
       <module name="userAuthen" target="18" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api-gateway" options="-parameters" />
+      <module name="cart" options="-parameters" />
+      <module name="common" options="-parameters" />
+      <module name="order" options="-parameters" />
+      <module name="order-kafka" options="-parameters" />
+      <module name="order-orchestration" options="-parameters" />
       <module name="product" options="-parameters" />
       <module name="server-discovery" options="-parameters" />
+      <module name="user" options="-parameters" />
       <module name="userAuthen" options="-parameters" />
     </option>
   </component>
